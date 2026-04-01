@@ -1,0 +1,119 @@
+# ============================================================
+#  🌸 GitHub Profile Generator — 配置文件
+#  只需修改此文件的内容，运行 generate_profile.py 即可生成全部资产
+# ============================================================
+
+# ------ GitHub 基本信息 ------
+github:
+  username: "your-username"                # ← 改成你的 GitHub 用户名
+  repo: "your-username"                    # ← Profile 仓库名（通常同用户名）
+
+# ------ 顶部 Banner ------
+banner:
+  name: "YourName"                         # ← 显示的英文名（花体字渲染）
+  greeting: "Hi, I'm"                      # 名字上方的小标题
+  subtitle: "欢迎光临我的代码世界"           # ← 名字下方的副标题
+  character_image: "assets/example-character.png"   # ← 人物图片路径（PNG 透明背景最佳）
+  # 渐变背景色（左上 → 右下）
+  gradient_start: [75, 45, 95]             # 深紫
+  gradient_end: [120, 75, 115]             # 粉紫
+  text_gap: 20                             # 文字与人物之间的间距(px)
+
+# ------ About Me 个人介绍 ------
+about_me:
+  - emoji: "🍁"
+    label: "Position"
+    value: "Your Position Here"            # ← 你的职位
+  - emoji: "🌿"
+    label: "Focus"
+    value: "Your Focus Areas Here"         # ← 你的专注方向
+  - emoji: "🤎"
+    label: "Aspiration"
+    value: "Your life motto here."         # ← 你的座右铭
+
+# ------ 作品展示 ------
+projects:
+  section_title: "我的作品"                 # ← 板块标题
+  cards:
+    # 每个项目一张卡片，可增删。每行自动展示3张
+    - name: "Project-A"                    # ← 项目名
+      desc: "一句话描述"                    # ← 简介
+      tech: "Swift"                        # ← 技术栈标签
+      repo: "project-a"                    # ← GitHub 仓库名（用于链接）
+      color_top: [245, 180, 195]           # 卡片顶部渐变色 [R,G,B]
+      color_bottom: [235, 155, 175]        # 卡片底部渐变色
+
+    - name: "Project-B"
+      desc: "另一个项目"
+      tech: "Python"
+      repo: "project-b"
+      color_top: [190, 215, 120]
+      color_bottom: [165, 200, 95]
+
+    - name: "Project-C"
+      desc: "第三个项目"
+      tech: "JavaScript"
+      repo: "project-c"
+      color_top: [250, 200, 210]
+      color_bottom: [240, 175, 195]
+
+# ------ 技能图谱 ------
+skills:
+  section_title: "我的技能"
+  background_image: "assets/example-bg.png"    # ← 技能背景图（人物/插画）
+  background_opacity: 0.4                       # 背景图透明度 (0.0~1.0)
+  overlay_color: [240, 200, 220, 50]            # 蒙层颜色 RGBA
+  items:
+    - name: "技能一"
+      percent: 80                               # ← 熟练度百分比
+      color: [232, 130, 154]                    # 进度条颜色
+      desc: "关键词A · 关键词B · 关键词C"
+    - name: "技能二"
+      percent: 70
+      color: [200, 100, 140]
+      desc: "关键词D · 关键词E"
+    - name: "技能三"
+      percent: 55
+      color: [157, 196, 74]
+      desc: "关键词F · 关键词G · 关键词H"
+
+# ------ 成长路线 ------
+timeline:
+  items:
+    - date: "2025.01"
+      title: "起步"
+      color: [232, 130, 154]
+      lines:
+        - "第一件重要的事"
+        - "第二件重要的事"
+    - date: "2025.06"
+      title: "成长"
+      color: [157, 196, 74]
+      lines:
+        - "里程碑描述"
+        - "取得的成果"
+    - date: "Next"
+      title: "未来"
+      color: [120, 100, 180]
+      lines:
+        - "下一步计划"
+        - "长远目标"
+
+# ------ 近日足迹（活动图） ------
+activity:
+  section_title: "近日足迹"
+  bg_color: "1A0D2E"
+  text_color: "E8829A"
+  line_color: "C4527A"
+  point_color: "9DC44A"
+  area_color: "3D1558"
+
+# ------ 全局样式 ------
+style:
+  section_emoji: "💕"          # 每个板块标题前的 emoji
+  card_width: 340              # 作品卡片宽度(px)
+  card_height: 150             # 作品卡片高度(px)
+  banner_width: 1200           # Banner 宽度(px)
+  banner_height: 300           # Banner 高度(px)
+  skills_width: 1200           # 技能图宽度(px)
+  skills_height: 650           # 技能图高度(px)
